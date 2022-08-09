@@ -23,8 +23,10 @@ class HomePageNotifier extends StateNotifier<HomePageState> {
 
 // ここわからない
 // StateNotifierProviderって何？
+//　UIがHomePageNotifierクラスと対話できるようになる
 // autoDisposeって何？
-// 結局 homePageProviderって何を返してるの？
+// 参照されなくなったプロバイダのステートを破棄する。不必要な負荷を避けたり、ステートをリセットしてデータ取得をやり直すためなどに使用。
+
 final homePageProvider =
     StateNotifierProvider.autoDispose<HomePageNotifier, HomePageState>(
   (ref) => HomePageNotifier(),
