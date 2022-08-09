@@ -7,10 +7,9 @@ class HomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // わからん
+
     final _homePageState = ref.watch(homePageProvider);
 
-    // わからん
     final _homePageNotifier = ref.read(homePageProvider.notifier);
 
     return Scaffold(
